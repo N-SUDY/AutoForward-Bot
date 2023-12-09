@@ -6,7 +6,7 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.constants import ParseMode
 from telegram.ext import Updater, CommandHandler, MessageHandler, filters, ConversationHandler, CallbackContext, CallbackQueryHandler
 from pymongo import MongoClient
-from config import BOT_TOKEN, MONGODB_URI, API_ID, API_HASH, PYROGRAM_STRING_SESSION
+from config import BOT_TOKEN, MONGODB_URI, API_ID, API_HASH
 
 # Initialize logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
