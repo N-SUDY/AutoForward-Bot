@@ -1,0 +1,37 @@
+{
+  "name": "your-telegram-bot",
+  "description": "Your Telegram Forward Bot",
+  "repository": "https://github.com/yourusername/your-telegram-bot-repo",
+  "logo": "https://example.com/path/to/your/logo.png",
+  "keywords": ["telegram", "bot", "forward", "python"],
+  "addons": [
+    "heroku-postgresql:hobby-dev",
+    "scheduler:standard"
+  ],
+  "env": {
+    "API_ID": {
+      "description": "Your Telegram API ID",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Your Telegram API Hash",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Your Telegram Bot Token",
+      "required": true
+    },
+    "MONGO_URI": {
+      "description": "Your MongoDB URI for storing data (optional)",
+      "required": false
+    }
+  },
+  "scripts": {
+    "heroku-postbuild": "python setup.py"
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  }
+}
